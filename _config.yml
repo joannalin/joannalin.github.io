@@ -1,3 +1,29 @@
+# Site settings
 name: Joanna Lin
+title: Joanna Lin
+email: hi@joannal.in
 description: online portfolio
-url: "http://localhost:4000"
+#baseurl:  # the subpath of your site, e.g. /blog/
+url:  "http://joannal.in"
+twitter_username: joannalin
+github_username:  joannalin
+
+# Build settings
+markdown: kramdown
+
+highlighter: pygments
+
+# Pagination
+paginate: 15
+paginate_path: "/blog/page:num/"
+
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+  poetry:
+    output: true
+    permalink: /poetry/:path/
+
+
